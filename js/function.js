@@ -41,3 +41,16 @@ function addAllColumnHeaders(myList)
 
     return columnSet;
 }​
+
+var csv = require("./csv.js");
+var json = csv.parse('path/to/file'); // Console reads “Parsed Items: #”
+Writes the parsed file to a file like this:
+
+csv.write('path/to/file'); // Console reads “Parsed Items: #”
+By default, a report is sent to the console (“Parsed Items: #” for .parse(); “File saved” for .write()). You can pass an config object as a second argument with console: false to bypass this behavior. Like so:
+
+    var config = {
+        console: false
+    }
+var json = csv.parse('path/to/file', config);
+csv.write('path/to/file', config);

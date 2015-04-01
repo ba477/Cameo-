@@ -1,0 +1,82 @@
+a{
+    text-decoration: none;
+}
+body{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Myriad Pro";
+}
+
+header{
+    height: 129px;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 200px;
+    height: 66px;
+    position: absolute;
+}
+
+h1{
+    font-size: 30px;
+    color :#232c6e;
+    text-align: center;
+
+}
+
+nav {
+    width: 319px;
+    padding-top: 80px;
+}
+nav #menu li{
+    display: table-cell;
+    width: auto;
+}
+
+
+nav #menu a{
+    padding: 6px;
+
+    background-color: #e5e7f3;
+   color : #8086ad;
+}
+
+
+nav #menu a:focus{
+    padding-top: 10px;
+    background-color: #d8dcf3;
+    color : #232c6e;
+}
+#content{
+    width: 100%;
+    height: 100%;
+    background-color: #d8dcf3;
+}
+
+/** roooot **/
+
+#work {
+    width: 1000px;
+    min-height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.towait{
+    padding-top: 200px;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/* footer */
+
+.copyr{
+    text-align: center;
+    padding: 40px;
+}
+
