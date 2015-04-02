@@ -22,7 +22,18 @@
     </header>
     <div id="content">
         <div id="work">
-            <p class="towait">Site en construction</p>
+        <?php
+            function sql_details(){
+            $sql = "SELECT
+            `id`, `Raison sociale`, `Capital`, `Adresse`, `Ville`, `RCS`, `Nom`, `Prémon`
+            FROM
+            `testcontact`
+            WHERE
+            `id` = ". $_GET['id'] ."
+            ;";
+            return $this->db->query( $sql );
+            }
+        ?>
         </div>
     </div>
     <footer>

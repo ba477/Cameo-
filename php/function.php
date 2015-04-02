@@ -26,3 +26,7 @@ fwrite($newFileHandler,$myContent);
 fclose($newFileHandler);
 
 //On a fini
+
+
+
+

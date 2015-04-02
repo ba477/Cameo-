@@ -1,0 +1,1 @@
+SELECT `id`, `Raison sociale`, `Capital`, `Adresse`, `Ville`, `RCS`, `Nom`, `Prémon` FROM `testcontact` WHERE 1
