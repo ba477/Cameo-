@@ -22,6 +22,8 @@
     </header>
     <div id="content">
         <div id="work">
+
+            <p> <?php echo $sql['id'];?></p>
         <?php
             function sql_details(){
             $sql = "SELECT

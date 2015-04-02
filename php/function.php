@@ -28,5 +28,3 @@ fclose($newFileHandler);
 //On a fini
 
 
-
-
