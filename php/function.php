@@ -13,18 +13,20 @@ $myContent = file_get_contents("/try
 //On remplace les mots-clés, un à un
 $myContent = str_replace("[Raison Sociale]",$customer->getRaison(),$myContent);
 $myContent = str_replace("[Ville]",$customer->getVille(),$myContent);
-$myContent = str_replace("[RCS]",$customer->getrcs(),$myContent);
-$myContent = str_replace("[Nom]",$customer->getname(),$myContent);
-$myContent = str_replace("[Prémon]",$customer->getfirstname(),$myContent);
-$myContent = str_replace("[Fonction]",$customer->getfonction(),$myContent);
+$myContent = str_replace("[RCS]",$customer->getRcs(),$myContent);
+$myContent = str_replace("[Nom]",$customer->getName(),$myContent);
+$myContent = str_replace("[Prémon]",$customer->getFirstname(),$myContent);
+$myContent = str_replace("[Fonction]",$customer->getFonction(),$myContent);
 
 
 
 //On crée le fichier généré
-$newFileHandler = fopen("./try/Convention_SIPLEC_CEE.doc","a");
+$newFileHandler = fopen("./Convention_SIPLEC_CEE.doc","a");
 fwrite($newFileHandler,$myContent);
 fclose($newFileHandler);
 
 //On a fini
+
+
 
 

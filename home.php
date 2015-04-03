@@ -23,19 +23,8 @@
     <div id="content">
         <div id="work">
 
-            <p> <?php echo $sql['id'];?></p>
-        <?php
-            function sql_details(){
-            $sql = "SELECT
-            `id`, `Raison sociale`, `Capital`, `Adresse`, `Ville`, `RCS`, `Nom`, `Prémon`
-            FROM
-            `testcontact`
-            WHERE
-            `id` = ". $_GET['id'] ."
-            ;";
-            return $this->db->query( $sql );
-            }
-        ?>
+            <p> <?php echo $query['9'];?></p>
+
         </div>
     </div>
     <footer>
