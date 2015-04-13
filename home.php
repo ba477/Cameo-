@@ -9,6 +9,19 @@
 </head>
 <body>
     <header>
+        <?php
+
+        class article
+        {
+
+            function __construct()
+            {
+                global $db;
+                $this->db = &$db;
+            }
+        }
+        ?>
+
         <div class="logo"><img src="img/logo.png" alt="Caméo energy"/></div>
         <h1>Gestion des projets</h1>
         <nav>
@@ -21,9 +34,17 @@
         </nav>
     </header>
     <div id="content">
+        <?php
+        function details(){
+            $results = $this->sql_details();
+            $row = $results->fetch_assoc();
+            var_dump( $row );
+        }
+        while( $row = $results->fetch_assoc())
+        ?>
         <div id="work">
 
-            <p> <?php echo $query['9'];?></p>
+            <p> <?php echo $query['1'];?></p>
 
         </div>
     </div>

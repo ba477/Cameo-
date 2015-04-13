@@ -32,4 +32,5 @@ if ( $result) {
 }
 
 include( 'home.php' );
-?>
+
+$main = new main();
