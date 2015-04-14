@@ -59,11 +59,18 @@ nav #menu a:focus{
 /** roooot **/
 
 #work {
+    position: relative;
     width: 1000px;
     min-height: 550px;
     margin-left: auto;
     margin-right: auto;
 
+}
+
+table{
+    top: 157px;
+    position: absolute !important;
+    left: 214px;
 }
 
 .towait{

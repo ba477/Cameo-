@@ -43,6 +43,7 @@
 <table border=1 width="400">
     <tr><td>ID</td><td>NOM</td><td>Action</td></tr>
 <?php
+
             while( $row = $results->fetch_assoc()){
 ?>
     <tr>
