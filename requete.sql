@@ -1,12 +1,17 @@
 SELECT
-  `id` ,
-  `Raison sociale` ,
-  `Capital` ,
-  `Adresse` ,
-  `Ville` ,
-  `RCS` ,
-  `Nom` ,
-  `Prémon`
+   `id`,
+   `numetodaccord`,
+   `raisonsocial`,
+   `capital`,
+   `adressesiege`,
+   `cp`,
+   `ville`,
+   `rcs`,
+   `nom`,
+   `prenom`,
+   `fonction`,
+   `tukwu`,
+   `operation`
 FROM
   `testcontact`
 WHERE
