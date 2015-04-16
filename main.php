@@ -13,6 +13,8 @@ class main{
             'article.suppression' => array( 'class' => 'article' , 'method' => 'suppression' ),
             'article.liste' => array( 'class' => 'article' , 'method' => 'liste' ),
             'article.details' => array( 'class' => 'article' , 'method' => 'details' ),
+            'article.export' => array( 'class' => 'article' , 'method' => 'export' ),
+
         );
         if( isset( $page[$CurPage] ) ){
             $method = $page[$CurPage]['method'];
